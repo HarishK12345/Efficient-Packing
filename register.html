@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Register Form</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'><link rel="stylesheet" href="static/loginstyle.css">
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="login-form">
+  <form action="{{url_for('register')}}", method="post">
+    <div class="msg">{{ msg }}</div>
+    <h1>Register</h1>
+    <div class="content">
+      <div class="input-field">
+        <input type="text" placeholder="Name" name="name">
+        <input type="number" placeholder="Phone" name="phone">
+        <input type="text" placeholder="Email" name="email">
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="password" name="password">
+    <div class="action">
+      <!-- <a href=hello> -->
+      <!-- </a> -->
+      <!-- <a href=hello> -->
+        <button type="submit">Sign-up</button>
+      <!-- </a> -->
+    </div>
+  </form>
+</div>
+<!-- partial -->
+
+</body>
+</html>
